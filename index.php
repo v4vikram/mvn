@@ -196,31 +196,31 @@
 
                 </div>
                 <div class="col-span-12 md:col-span-7 lg:col-span-8 mt-5 md:mt-0 md:pl-[100px] lg:pl-[300px]">
-                    <form class="flex-col flex gap-4" id="contactFormFooter">
+                <form class="flex-col flex gap-4" id="contactFormFooter">
+    <!-- Name Field -->
+    <div class="flex flex-col mb-3">
+        <input type="text" id="footer_name" name="name" placeholder="Your Name"
+            class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
+    </div>
 
-                        <!-- Name Field -->
-                        <div class="flex flex-col mb-3">
-                            <input type="text" id="name" name="name" placeholder="Your Name"
-                                class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
-                        </div>
+    <!-- Email Field -->
+    <div class="flex flex-col mb-3">
+        <input type="email" id="footer_email" name="email" placeholder="Your Email"
+            class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
+    </div>
 
-                        <!-- Email Field -->
-                        <div class="flex flex-col mb-3">
-                            <input type="email" id="email" name="email" placeholder="Your Email"
-                                class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
-                        </div>
+    <!-- Phone Field -->
+    <div class="flex flex-col mb-3">
+        <input type="tel" id="footer_phone" name="phone" placeholder="Your Number"
+            class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
+    </div>
 
-                        <!-- Phone Field -->
-                        <div class="flex flex-col mb-3">
-                            <input type="tel" id="phone" name="phone" placeholder="Your Number"
-                                class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
-                        </div>
+    <!-- Submit Button -->
+    <button type="submit" class="px-4 py-2 font-semibold text-black bg-goldLight h-[43px]">
+        Submit
+    </button>
+</form>
 
-                        <!-- Submit Button -->
-                        <button type="submit" class="px-4 py-2 font-semibold text-black bg-goldLight h-[43px]">
-                            Submit
-                        </button>
-                    </form>
                 </div>
             </div>
             <p class="text-center text-white py-[25px] md:py-[40px]">

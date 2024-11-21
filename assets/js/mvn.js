@@ -34,7 +34,6 @@ $(document).ready(function () {
 
   $("#contactFormFooter").validate({
     highlight: function (element) {
-      console.log($(element));
       $(element).addClass("border-red-500"); // Add red border on error
     },
     unhighlight: function (element) {
@@ -73,25 +72,23 @@ $(document).ready(function () {
     submitHandler: function (form, event) {
       event.preventDefault(); // Prevent form from reloading the page
       $.ajax({
-        url: "submitForm.php", // Properly referencing ajax_object.ajax_url
+        url: "submitForm.php",
         type: "POST",
         data: {
-          name: $("#name").val(),
-          email: $("#email").val(),
-          phone: $("#phone").val(),
-          action: "send_contact_form", // The action to trigger in PHP
+          name: $("#footer_name").val(),
+          email: $("#footer_email").val(),
+          phone: $("#footer_phone").val(),
         },
         success: function (response) {
-          console.log(response)
+          console.log(response);
           $("#formResponse").html(
             '<p class="bg-yellow text-green py-3 px-4 mt-3 rounded-full text-center">Message sent successfully!</p>'
           );
           $("#contactFormFooter")[0].reset();
-          $(".popup-overlay").css("display","flex");
-          $('.close-btn').click(function(){
-            $(".popup-overlay").css("display","none");
-
-          })
+          $(".popup-overlay").css("display", "flex");
+          $(".close-btn").click(function () {
+            $(".popup-overlay").css("display", "none");
+          });
         },
         error: function (error) {
           $("#formResponse").html(
@@ -101,6 +98,7 @@ $(document).ready(function () {
       });
     },
   });
+  
   $("#popupForm").validate({
     highlight: function (element) {
       console.log($(element));
