@@ -25,12 +25,12 @@
             <div class="container flex justify-between items-center">
                 <div class="logo">
                     <a href="#">
-                        <img src="assets/img/logo.png" alt="logo" class="w-[200px]">
+                        <img src="assets/img/logo.png" alt="logo" class="w-[150px] md:w-[200px]">
                     </a>
                 </div>
                 <div class="support">
                     <a href="#contactSection"
-                        class="px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full">Contact</a>
+                        class="px-6 md:px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full">Contact</a>
                 </div>
             </div>
         </header>
@@ -48,11 +48,11 @@
                         class="px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full inline-block mt-3"
                         id="formTrigger">Download Brochure</a>
                 </div>
-                <img src="assets/img/banner.webp" alt="banner" class="">
+                <img src="assets/img/banner.webp" alt="banner" class="h-[250px] md:h-auto">
             </div>
         </section>
         <!-- section 2 -->
-        <section class="relative w-full h-screen">
+        <section class="relative w-full md:h-screen">
             <div class="container text-center pb-10 pt-20">
                 <span class="sub-heading text-gradient !lowercase block mb-3">3<sup
                         class="sub-heading text-gradient !lowercase !text-[20px] required: top-[-18px]">rd</sup> and
@@ -69,16 +69,17 @@
                     <div class="border-bottom-line"></div>
                 </div>
             </div>
-            <img src="assets/img/crown2.webp" alt="crown2" class="absolute left-0 top-0 z-[-1]">
+            <img src="assets/img/crown2.webp" alt="crown2" class="absolute left-0 top-0 z-[-1] hidden md:block">
+            <img src="assets/img/sm-crown2.webp" alt="crown2" class="absolute left-0 top-0 z-[-1] block md:hidden">
         </section>
 
         <!-- section 3 -->
         <section class="pb-20">
             <div class="container text-center">
-                <h2 class="h1 text-gradient !text-[40px] !leading-[40px] mt-20 mb-12">THE UPPER CREST WILL BE A VIBRANT
+                <h2 class="h1 text-gradient !text-[22px] !leading-[25px] md:!text-[40px] md:!leading-[40px] mt-20 mb-12">THE UPPER CREST WILL BE A VIBRANT
                     HUB OF ENTERTAINMENT AND DIVERSE ATTRACTIONS</h2>
 
-                <div class="grid grid-cols-3 gap-8">
+                <div class="grid grid-cols-3 gap-3 md:gap-8">
                     <div>
                         <img src="assets/img/variant-cart-1.webp" alt="variant-cart-1">
                     </div>
@@ -189,9 +190,7 @@
                 <div class="col-span-12 md:col-span-5 lg:col-span-4">
                     <a href="#" class="h1 text-gradient">MVN</a>
                     <p class="text-white mt-[15px]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam quaerat itaque
-                        veritatis minima repudiandae nisi. Corporis deserunt tempore minima nihil officiis veniam qui
-                        quae accusantium, a amet impedit reprehenderit.
+                    Disclaimer for videos/GIFs: Artistic impression/Video Creative only for luxury lifestyle representation and all the information on this Video Creative is made in good faith and for general information purpose only and not to be treated as an offering or solicitation of sale under applicable laws in any manner. *Terms and Conditions apply.
                     </p>
 
                 </div>

@@ -217,38 +217,12 @@ input {
 }
 
 @media (max-width: 768px) {
-  .logo-2 {
-    width: 40%;
-  }
-  .menu-wrapper {
-    padding: 20px;
-  }
 }
 
 @media (max-width: 576px) {
-  img {
-    height: auto;
-  }
-  .bg-image {
-    height: 400px;
-  }
-  .logo-2 {
-    width: 75%;
-  }
-  .menu_toggler {
-    height: 44px;
-  }
-  .btn-1 {
-    padding: 0px 20px;
-  }
-  .ground-bg::after {
-    display: none;
-  }
-
-  .green-box {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  .swiper {
+    height: 30vh;
+}
 }
 
 @media (max-width: 425px) {
