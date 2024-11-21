@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                "Name: $name\n" .
                "Email: $email\n" .
                "Phone: $phone\n";
-               return print_r($message);
+            //    return print_r($message);
 
     // Send email
     if (mail($to, $subject, $message, $headers)) {
