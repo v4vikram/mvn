@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js}", // Keeps scanning files inside the src folder
-    "./public/**/*.{html,js}", // Add this if you have a public folder
-    "./*.{html,js}", // This will scan files in the root directory
-    "./other-folder/**/*.{html,js}", // Scan files in another folder outside src
+    "./src/**/*.{html,js,php}", // Keeps scanning files inside the src folder
+    "./public/**/*.{html,js,php}", // Add this if you have a public folder
+    "./*.{html,js,php}", // This will scan files in the root directory
+    "./other-folder/**/*.{html,js,php}", // Scan files in another folder outside src
   ],
   theme: {
     extend: {
