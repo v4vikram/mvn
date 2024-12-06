@@ -16,6 +16,9 @@ body{
   width: 100%;
   height: 100%;
 }
+html.lenis.lenis-smooth {
+  overflow-x: hidden;
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {

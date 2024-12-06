@@ -29,9 +29,13 @@
                         <img src="assets/img/logo.png" alt="logo" class="w-[150px] md:w-[200px]">
                     </a>
                 </div>
-                <div class="support">
-                    <a href="#contactSection"
-                        class="px-6 md:px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full">Contact</a>
+                <div class="support hidden gap-4 md:flex">
+                    <a href="tel:9560190870" class="font-semibold text-goldLight text-[17px]"><i
+                            class="fa-solid fa-phone"></i>
+                        <span class="">9560190870</span></a>
+                    <a href="https://wa.me/9560190870" target="_blank"
+                        class="font-semibold text-goldLight text-[17px]"><i class="fa-brands fa-whatsapp"></i> <span
+                            class="">9560190870</span></a>
                 </div>
             </div>
         </header>
@@ -49,7 +53,8 @@
                         class="px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full inline-block mt-3"
                         id="formTrigger">Download Brochure</a>
                 </div>
-                <img src="assets/img/banner.webp" alt="banner" class="h-[250px] md:h-auto">
+                <img src="assets/img/banner.webp" alt="banner" class="hidden md:block">
+                <img src="assets/img/sm-banner.webp" alt="sm-banner" class="block md:hidden">
             </div>
         </section>
         <!-- section 2 -->
@@ -77,7 +82,9 @@
         <!-- section 3 -->
         <section class="pb-20">
             <div class="container text-center">
-                <h2 class="h1 text-gradient !text-[22px] !leading-[25px] md:!text-[40px] md:!leading-[40px] mt-20 mb-12">THE UPPER CREST WILL BE A VIBRANT
+                <h2
+                    class="h1 text-gradient !text-[22px] !leading-[25px] md:!text-[40px] md:!leading-[40px] mt-20 mb-12">
+                    THE UPPER CREST WILL BE A VIBRANT
                     HUB OF ENTERTAINMENT AND DIVERSE ATTRACTIONS</h2>
 
                 <div class="grid grid-cols-3 gap-3 md:gap-8">
@@ -154,12 +161,14 @@
     </main>
 
     <div class="popup-overlay">
-                <div class="close-btn">X</div>
-                <h2 class="!text-[45px] !leading-[45px] font-extrabold text-gradient mb-4">Thank You</h2>
-            <a href="assets/img/mvn-brochure.pdf" download="mvn-brochure" class="btn-1">Download</a>
-            </div>
+        <div class="close-btn">X</div>
+        <h2 class="!text-[45px] !leading-[45px] font-extrabold text-gradient mb-4">Thank You</h2>
+        <a href="assets/img/mvn-brochure.pdf" download="mvn-brochure" class="btn-1">Download</a>
+    </div>
     <!-- form -->
-    <form class="flex-col flex gap-4 fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[30%] bg-black px-4 pb-4 pt-[50px] z-[99]" id="popupForm">
+    <form
+        class="flex-col flex gap-4 fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[30%] bg-black px-4 pb-4 pt-[50px] z-[99]"
+        id="popupForm">
         <div class="absolute right-4 top-4 bg-goldLight text-black px-2 cursor-pointer" id="popup-close-btn">X</div>
         <!-- Name Field -->
         <div class="flex flex-col mb-3">
@@ -185,41 +194,55 @@
         </button>
     </form>
 
+    
+    <div class="container block md:hidden">
+        <div class="flex justify-between w-[94%] mx-auto fixed left-[50%] -translate-x-1/2 bottom-5 z-[99999]">
+           
+            <a href="tel:9560190870" class="font-semibold text-goldLight bg-white rounded-full w-[55px] h-[55px] flex justify-center items-center text-[26px]"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://wa.me/9560190870" target="_blank" class="font-semibold text-goldLight">
+                <img src="assets/img/whatsapp.png" alt="whatsapp" class="w-[55px] h-[55px]">
+            </a>
+        </div>
+    </div>
+
     <footer class="bg-transparent pt-[50px] md:pt-[100px]" id="contactSection">
         <div class="container">
             <div class="grid grid-cols-12">
                 <div class="col-span-12 md:col-span-5 lg:col-span-4">
                     <a href="#" class="h1 text-gradient">MVN</a>
                     <p class="text-white mt-[15px]">
-                    Disclaimer for videos/GIFs: Artistic impression/Video Creative only for luxury lifestyle representation and all the information on this Video Creative is made in good faith and for general information purpose only and not to be treated as an offering or solicitation of sale under applicable laws in any manner. *Terms and Conditions apply.
+                        Disclaimer for videos/GIFs: Artistic impression/Video Creative only for luxury lifestyle
+                        representation and all the information on this Video Creative is made in good faith and for
+                        general information purpose only and not to be treated as an offering or solicitation of sale
+                        under applicable laws in any manner. *Terms and Conditions apply.
                     </p>
 
                 </div>
                 <div class="col-span-12 md:col-span-7 lg:col-span-8 mt-5 md:mt-0 md:pl-[100px] lg:pl-[300px]">
-                <form class="flex-col flex gap-4" id="contactFormFooter">
-    <!-- Name Field -->
-    <div class="flex flex-col mb-3">
-        <input type="text" id="footer_name" name="name" placeholder="Your Name"
-            class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
-    </div>
+                    <form class="flex-col flex gap-4" id="contactFormFooter">
+                        <!-- Name Field -->
+                        <div class="flex flex-col mb-3">
+                            <input type="text" id="footer_name" name="name" placeholder="Your Name"
+                                class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
+                        </div>
 
-    <!-- Email Field -->
-    <div class="flex flex-col mb-3">
-        <input type="email" id="footer_email" name="email" placeholder="Your Email"
-            class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
-    </div>
+                        <!-- Email Field -->
+                        <div class="flex flex-col mb-3">
+                            <input type="email" id="footer_email" name="email" placeholder="Your Email"
+                                class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
+                        </div>
 
-    <!-- Phone Field -->
-    <div class="flex flex-col mb-3">
-        <input type="tel" id="footer_phone" name="phone" placeholder="Your Number"
-            class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
-    </div>
+                        <!-- Phone Field -->
+                        <div class="flex flex-col mb-3">
+                            <input type="tel" id="footer_phone" name="phone" placeholder="Your Number"
+                                class="py-2 border-b-2 bg-transparent text-goldLight border-goldLight">
+                        </div>
 
-    <!-- Submit Button -->
-    <button type="submit" class="px-4 py-2 font-semibold text-black bg-goldLight h-[43px]">
-        Submit
-    </button>
-</form>
+                        <!-- Submit Button -->
+                        <button type="submit" class="px-4 py-2 font-semibold text-black bg-goldLight h-[43px]">
+                            Submit
+                        </button>
+                    </form>
 
                 </div>
             </div>

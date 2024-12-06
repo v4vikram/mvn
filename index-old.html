@@ -25,12 +25,14 @@
             <div class="container flex justify-between items-center">
                 <div class="logo">
                     <a href="#">
-                        <img src="assets/img/logo.png" alt="logo" class="w-[200px]">
+                        <img src="assets/img/logo.png" alt="logo" class="w-[150px] md:w-[200px]">
                     </a>
                 </div>
-                <div class="support">
-                    <a href="#"
-                        class="px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full">Contact</a>
+                <div class="support hidden gap-4 md:flex">
+                    <a href="tel:9560190870" class="font-semibold text-goldLight text-[17px]"><i class="fa-solid fa-phone"></i>
+                        <span class="">9560190870</span></a>
+                    <a href="https://wa.me/9560190870" target="_blank" class="font-semibold text-goldLight text-[17px]"><i
+                            class="fa-brands fa-whatsapp"></i> <span class="">9560190870</span></a>
                 </div>
             </div>
         </header>
@@ -51,7 +53,8 @@
                         class="px-8 py-4 font-semibold text-black bg-goldLight uppercase rounded-full inline-block mt-3"
                         id="formTrigger">Download Brochure</a>
                 </div>
-                <img src="assets/img/banner.webp" alt="banner" class="">
+                <img src="assets/img/banner.webp" alt="banner" class="hidden md:block">
+                <img src="assets/img/sm-banner.webp" alt="sm-banner" class="block md:hidden">
             </div>
         </section>
         <!-- section 2 -->
@@ -81,7 +84,7 @@
                 <h2 class="h1 text-gradient !text-[40px] !leading-[40px] mt-20 mb-12">THE UPPER CREST WILL BE A VIBRANT
                     HUB OF ENTERTAINMENT AND DIVERSE ATTRACTIONS</h2>
 
-                <div class="grid grid-cols-3 gap-8">
+                <div class="grid grid-cols-3 gap-2 md:gap-8">
                     <div>
                         <img src="assets/img/variant-cart-1.webp" alt="variant-cart-1">
                     </div>
@@ -154,8 +157,19 @@
         </section>
     </main>
 
+    <div class="container block md:hidden">
+        <div class="flex justify-between w-[94%] mx-auto fixed left-[50%] -translate-x-1/2 bottom-5 z-[99999]">
+           
+            <a href="tel:9560190870" class="font-semibold text-goldLight bg-white rounded-full w-[55px] h-[55px] flex justify-center items-center text-[26px]"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://wa.me/9560190870" target="_blank" class="font-semibold text-goldLight">
+                <img src="assets/img/whatsapp.png" alt="whatsapp" class="w-[55px] h-[55px]">
+            </a>
+        </div>
+    </div>
     <!-- form -->
-    <form class="flex-col flex gap-4 fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[30%] bg-black px-4 pb-4 pt-[50px] z-[99]" id="popupForm">
+    <form
+        class="flex-col flex gap-4 fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[30%] bg-black px-4 pb-4 pt-[50px] z-[99]"
+        id="popupForm">
         <div class="absolute right-4 top-4 bg-goldLight text-black px-2 cursor-pointer" id="popup-close-btn">X</div>
         <!-- Name Field -->
         <div class="flex flex-col mb-3">

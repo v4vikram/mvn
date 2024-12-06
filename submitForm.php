@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Email settings
-    $to = "v4vikram.dev@gmail.com"; // Replace with your email
+    $to = "sevensquareinvestment@gmail.com"; // Replace with your email
     $subject = "New Form Submission";
     $headers = "From: " . $email . "\r\n" .
                "Reply-To: " . $email . "\r\n" .
